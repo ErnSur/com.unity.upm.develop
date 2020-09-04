@@ -144,7 +144,7 @@ namespace Unity.PackageManagerUI.Develop.Editor
             foreach (var word in words)
             {
                 if (!string.IsNullOrEmpty(word))
-                    titleName.Append(CultureInfo.InvariantCulture.TextInfo.ToTitleCase(word.ToLower()));
+                    titleName.Append(word);
             }
             return titleName.ToString();
         }
